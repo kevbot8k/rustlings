@@ -6,17 +6,16 @@
 // Execute `rustlings hint primitive_types1` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
-
 fn main() {
     // Booleans (`bool`)
 
-    let is_morning = true;
+    let is_morning: bool = true;
     if is_morning {
         println!("Good morning!");
     }
 
-    let // Finish the rest of this line like the example! Or make it be false!
+    // bool operators. operator reference: https://doc.rust-lang.org/reference/expressions/operator-expr.html
+    let is_evening: bool = !is_morning;// Finish the rest of this line like the example! Or make it be false!
     if is_evening {
         println!("Good evening!");
     }

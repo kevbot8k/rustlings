@@ -5,10 +5,11 @@
 // Execute `rustlings hint primitive_types3` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
 
 fn main() {
-    let a = ???
+    // arrays can be initalized with a single value repeated x times [val; rep]
+    // ref: https://doc.rust-lang.org/std/primitive.array.html 
+    let a: [u8;100] = [1;100];
 
     if a.len() >= 100 {
         println!("Wow, that's a big array!");
