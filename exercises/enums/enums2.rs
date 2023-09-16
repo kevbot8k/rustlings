@@ -3,11 +3,16 @@
 // Execute `rustlings hint enums2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
 #[derive(Debug)]
 enum Message {
-    // TODO: define the different variants used below
+    // ref: https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html 
+    Move {
+        x: usize,
+        y: usize
+    },
+    Echo(String),
+    ChangeColor(usize,usize,usize),
+    Quit
 }
 
 impl Message {
