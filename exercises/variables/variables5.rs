@@ -3,8 +3,6 @@
 // Execute `rustlings hint variables5` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
 fn main() {
     // &str because in memory this is a pointer to a compiled string
     let number: &str = "T-H-R-E-E"; // don't change this line
