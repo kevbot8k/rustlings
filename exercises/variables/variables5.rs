@@ -6,8 +6,11 @@
 // I AM NOT DONE
 
 fn main() {
-    let number = "T-H-R-E-E"; // don't change this line
+    // &str because in memory this is a pointer to a compiled string
+    let number: &str = "T-H-R-E-E"; // don't change this line
     println!("Spell a Number : {}", number);
-    number = 3; // don't rename this variable
+
+    // isize is controlled by the arch of the computer (this computer is x86_64 so isize = i64)
+    let number: isize = 3; // don't rename this variable
     println!("Number plus two is : {}", number + 2);
 }
