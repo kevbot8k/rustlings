@@ -5,14 +5,14 @@
 // Execute `rustlings hint move_semantics2` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
-
 #[test]
 fn main() {
     let vec0 = vec![22, 44, 66];
 
-    let mut vec1 = fill_vec(vec0);
+    // need to clone before moving value
+    let vec1 = fill_vec(vec0.clone());
 
+    // since vec0 is referenced after fill_vec, we either need a copy, or use slice references if cloning is too costly
     assert_eq!(vec0, vec![22, 44, 66]);
     assert_eq!(vec1, vec![22, 44, 66, 88]);
 }
