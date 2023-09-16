@@ -2,8 +2,6 @@
 //
 // Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 pub fn animal_habitat(animal: &str) -> &'static str {
     // expressions need the same type. using if as an expression requires each branch to return the same type
     let identifier = if animal == "crab" {
